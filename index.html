@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html>
-    <title>
-        Hello
-    </title>
-    <body>
-        Hi, my name is Amanda.
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <title>Amanda Lau's Personal Website</title>
+      <link rel="stylesheet" href="personalPage.css">
+      <script src="personalPage.js" defer></script>
+  </head>
+  <body>
+  <div class="tab" style="text-align: center;">
+    <button class="tablinks" onclick="clickHandle(event, 'aboutMe')">About Me</button>
+    <button class="tablinks" onclick="clickHandle(event, 'projects')">Projects</button>
+    <button class="tablinks" onclick="clickHandle(event, 'contactMe')">Contact Me</button>
+  </div>
 
-        <p>Hi world</p>
-    </body>
+ 
+  <div id="aboutMe" class="tabcontent">
+    
+    <div class="box">
+      <img src="HeadShot.png" alt="Headshot" class="box-img">
+      <header><h1>Hi! I'm Amanda Lau.</h1></header>
+      <h5>I'm a senior at Rutgers Business School, majoring in Business Analytics and Information Technology.</h5>
+    </div>
+    <div id="flexContainer">
+      <div id="general_info">
+        <div id="general_info_par">
+        <p style="text-align: center; font-size: 20px;"><strong><u>
+        About Me</u></strong>
+        </p>
+        <p>
+          I am a senior at the Rutgers Business School in New Brunswick, majoring in Business Analytics and Information Technology. 
+          I am eager to gain hands-on experience where I can combine my passion for both business and technology to help innovate new solutions.
+          I am actively seeking opportunities where I can make a positive contribution and utilize my analytical and problem-solving skills.
+        </p>
+        <p>
+          Through my involvement in my previous and current experiences, I am able to grow my knowledge by hearing from diverse people and learning from their perspectives.
+          I value collaborative environments and places that are open to growth and creative ideas.
+          I have high interests in both the technology and marketing industries, and seek opportunities where I can leverage both. 
+
+        </p>
+        <p>
+          My work experience includes interning at Ernst & Young, IQVIA, Rutgers Recreation, and Rutgers Athletics.
+          At Rutgers, I am the Professional Affairs Director for Rutgers Women in Information Technology and Informatics as well as a player on the Rutgers Women's Club Basketball Team.
+        </p>
+        </div>
+      </div>
+      <div id="courses">
+        <table>
+        <caption><strong><u>Courses Completed</u></strong></caption>
+        <thead>
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="even">
+            <td>33:136:370</td>
+            <td>Management Information Systems</td>
+          </tr>
+          <tr class="odd">
+            <td>33:136:385</td>
+            <td>Statistical Methods in Business</td>
+          </tr>
+          <tr class="even">
+            <td>33:136:388</td>
+            <td>Foundations of Business Programming</td>
+          </tr>
+          <tr class="odd">
+            <td>33:136:485</td>
+            <td>Time Series Modeling for Business</td>
+          </tr>
+          <tr class = "even">
+            <td>33:136:388</td>
+            <td>Foundations of Business Programming</td>
+          </tr>
+          <tr class="odd">
+            <td>33:136:470</td>
+            <td>Business Data Management</td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+    </div>
+    <footer>
+    </footer>
+  </div>
+  
+  <div id="flexContainer2">
+    <div id="general_info2">
+      <div id="general_info_par2">
+        <div id="projects" class="tabcontent">
+          <h3>Relational Databases & Web Applications Final Project</h3>
+          <p>Link to project.</p>
+        </div>
+        <div id="contactMe" class="tabcontent">
+          <p><strong>Email:</strong> ajl298@scarletmail.rutgers.edu</p>
+          <p><strong>Linkedin:</strong> @amandalau2</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
+
